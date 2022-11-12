@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | E-commerce product page</title>
+    
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb2de446e5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <button class="open-btn fa-solid fa-bars"></button>
+                <a class="navbar-brand">Sneakers</a>
+                <ul class="nav">
+                   <button class="close-btn"><img src="images/icon-close.svg" alt=""></button>
+                   <li class="nav-item"><a href="" class="nav-link">Collections</a></li> 
+                   <li class="nav-item"><a href="" class="nav-link">Men</a></li> 
+                   <li class="nav-item"><a href="" class="nav-link">Women</a></li> 
+                   <li class="nav-item"><a href="" class="nav-link">About</a></li> 
+                   <li class="nav-item"><a href="" class="nav-link">Contact</a></li> 
+                </ul>
+                
+                <div class="cart">
+                    <button class="cart-icon"><sup class="total-no-product"></sup></button>
+                    <div class="cart-box"></div>
+                </div>
+                <img class="user-img" src="images/image-avatar.png" alt="user-img">
+            </nav>
+            <hr class="mobile-hr" size="1" >
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div class="mobile-main-view">
+            <div class="mobile-imgs">
+                <div class="mobile-img" style="background-image: url('images/image-product-1.jpg')" alt="product-1"></div>
+                <div class="mobile-img" style="background-image: url('images/image-product-2.jpg')" alt="product-2"></div>
+                <div class="mobile-img" style="background-image: url('images/image-product-3.jpg')" alt="product-3"></div>
+                <div class="mobile-img" style="background-image: url('images/image-product-4.jpg')" alt="product-4"></div>
+            </div>
+            <div class="mobile-btns">
+                <button class="mobile-left-btn"></button>
+                <button class="mobile-right-btn"></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-section">
+        <div class="container">
+            <div class="product-display">
+                <div class="product-img">
+                    <div class="main-view">
+                        <img class="main-img" src="images/image-product-1.jpg" alt="product-1">
+                    </div>
+                    <div class="thumbnail-views">
+                        <img class="thumbnail-img" src="images/image-product-1-thumbnail.jpg" alt="product-1">
+                        <img class="thumbnail-img" src="images/image-product-2-thumbnail.jpg" alt="product-2">
+                        <img class="thumbnail-img" src="images/image-product-3-thumbnail.jpg" alt="product-3">
+                        <img class="thumbnail-img" src="images/image-product-4-thumbnail.jpg" alt="product-4">
+                    </div>
+                </div>
+                <div class="side-details">
+                    <h3 class="sneaker-company">Sneaker Company</h3>
+                    <h1>Fall Limited Edition <br> Sneakers</h1>
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    <div class="price-tag">$125.00 <span class="discount">50%</span></div>
+                    <div class="original-price">$250.00</div>
+                    <div class="minus-plus-btn">
+                        <button class="minus-btn"><img src="images/icon-minus.svg" alt="icon-minus"></button>
+                        <div class="no-of-product">0</div>
+                        <button class="plus-btn"><img src="images/icon-plus.svg" alt="icon-plus"></button>
+                    </div>
+                    <button class="add-to-cart-btn"> <img  class="add-cart-icon" src="images/icon-cart-white.svg" alt="icon-cart"> Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="light-box">
+        <div class="product-img-light-box">
+            <button class="cancel-btn"><i class="fa fa-x"></i></button>
+            <div class="main-view=light-box">
+                <button class="left-btn"></button>
+                <img class="main-img-light-box" src="images/image-product-1.jpg" alt="product-1">
+                <button class="right-btn"></button>
+            </div>
+            <div class="thumbnail-views-light-box">
+                <img class="thumbnail-img-light-box" src="images/image-product-1-thumbnail.jpg" alt="product-1">
+                <img class="thumbnail-img-light-box" src="images/image-product-2-thumbnail.jpg" alt="product-2">
+                <img class="thumbnail-img-light-box" src="images/image-product-3-thumbnail.jpg" alt="product-3">
+                <img class="thumbnail-img-light-box" src="images/image-product-4-thumbnail.jpg" alt="product-4">
+            </div>
+        </div>
+    </section>
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ige David</a>.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
