@@ -19,6 +19,7 @@
 }
 
 body {
+    font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--White);
     color: var(--Very-dark-blue);
 }
@@ -433,7 +434,7 @@ sup.total-no-product {
     margin-right: .8rem;
 }
 
-@media (max-width:1050px) {
+@media (max-width:920px) {
     button.open-btn {
         display: block;
         margin-right: 1rem;
@@ -457,7 +458,7 @@ sup.total-no-product {
     .nav {
         display: none;
         margin: 0;
-        position: absolute;
+        position: fixed;
         background-color: var(--White);
         top: 0;
         bottom: 0;
@@ -482,12 +483,16 @@ sup.total-no-product {
     }
 
     /* cart-box-sub-little-page */
+    .cart {
+        position: static;
+    }
 
     .cart-box {
         /* display: none; */
         position: absolute;
-        top: 5rem;
-        left: -17rem;
+        top: 120px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 23rem;
         height: 16rem;
         border-radius: .5rem;

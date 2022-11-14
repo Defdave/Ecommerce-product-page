@@ -9,9 +9,6 @@ cartIcon.addEventListener('click', () => {
     document.querySelector('.cart-box').classList.toggle('show')
 })
 
-
-document.querySelector('.no-of-product').textContent = localStorage.getItem('noProduct') || 0
-
 // getting the total number of items added to cart after reload
 let totalNoProduct = document.querySelectorAll('.cart-icon sup')
 totalNoProduct.forEach(total => {
